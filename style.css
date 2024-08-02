@@ -5,9 +5,10 @@
   box-sizing: border-box;
   overflow: hidden;
 }
-.bgImage{
+.bodySection{
   height: 94.2vh;
   width: 100vw;
+  position: relative;
 }
 .image{
   height: 100%;
@@ -20,10 +21,24 @@
   z-index: 50;
   
 }
+
+.waether{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-part{
+  display: flex;
+  align-items: center;
+  width: 245px;
+  margin-left: 480px;
+}
 .logo {
   height: 2rem;
   width: 2rem;
   position: relative;
+  padding: 0.17rem;
 }
 .logo:hover{
   padding: .1rem;
@@ -67,7 +82,7 @@ input{
     background: none;
     padding: 0.4rem;
     font-size: 1rem;
-    color: #f5f5f5;
+    color: black;
     transition: 150ms cubic-bezier(0.4,0,0.2,1);
 }
 label{
@@ -83,12 +98,39 @@ input:focus{
     border: 1.5px solid #1a73e8;
 }
 input:focus ~ label {
-    transform: translateY(-50%) scale(0.8);
-    background-color: #020e26;
+    transform: translateY(-30%) scale(0.8);
+
     padding: 0 0.2rem;
     color: #2196f3;
 }
 
-.excelIcon{
-  height: 2.5rem;
+.Icon{
+  height: 3rem;
 }
+
+.exceliconContainer {
+  position: absolute;
+  top: 2%;
+  left: 0.5%;
+  color: white;
+}
+
+.weathericonContainer{
+  margin-top: 15px;
+}
+
+.iconName{
+  display: flex;
+  justify-content: center;
+}
+
+.ludoIcon{
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.mazeIcon, .musicIcon, .vlcIcon{
+  margin-top: 15px;
+}
+
+
