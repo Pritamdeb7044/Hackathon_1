@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #444444;
+}
+
+.upperSection {
+  height: 4rem;
+  display: flex;
+  padding: .7rem;
+}
+
+.search-input {
+  width: 480px; /* Adjust width as necessary */
+  height: 47px;
+  padding: 0 50px 0 50px; /* Adjust padding for space between text and search icon */
+  border-radius: 20px; /* Half of the height for a perfect circle on each end */
+  border: none; /* No border */
+  outline: none; /* No outline on focus */
+  background-color: #444444; /* Dark gray background color */
+  color: #ffffff; /* Light gray text color */
+  font-size: 16px; /* Font size */
+  box-shadow: 0px -5px 10px 1px #3b3b3b, /*TOP*/ 5px 0px 10px 1px #3b3b3b,
+    /*RIGHT*/ 0px 5px 10px 1px #3b3b3b, /*BOTTOM*/ -5px 0px 10px 1px #3b3b3b; /*LEFT*/
+  /* Subtle inner shadow */
+  margin-left: 440px;
+}
+
+.search-input::placeholder {
+  color: #ffffff;
+}
+
+.search-icon {
+  position: absolute;
+  left: 472px;
+  top: 27px;
+}
+
+.currentLoc {
+    margin-left: 305px;
+  height: 40px;
+  width: 173px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4CBB17;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.currentLoactionBtn:hover{
+    cursor: pointer;
+}
+
+.locationIcon{
+    position: absolute;
+    top: 24px;
+    right: 273px;
+}
+
+
+.bodyUpperSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.clock-card {
+    background-color: #3C3C3C; /* Dark gray card background */
+    padding: 40px 30px; /* Padding inside the card */
+    border-radius: 20px; /* Rounded corners for the card */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), /* Dark shadow for depth */
+                -10px -10px 20px rgba(255, 255, 255, 0.1); /* Light shadow for embossed effect */
+    text-align: center; /* Center the text inside the card */
+    color: #FFF; /* White text color */
+    width: 280px; /* Width of the card */
+    height: 291px;
+}
+
+.city-name {
+    font-size: 22px; /* Font size for the city name */
+    margin: 0 0 10px 0; /* Margin below the city name */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.time {
+    font-size: 60px; /* Large font size for the time */
+    font-weight: bold; /* Bold font weight for the time */
+    margin: 10px 0; /* Margin around the time */
+}
+
+.date {
+    font-size: 14px; /* Smaller font size for the date */
+    color: #D1D1D1; /* Light gray color for the date */
+    margin-top: 5px; /* Margin above the date */
+}
+
+
+.weather-widget {
+    background-color: #3C3C3C;
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), /* Dark shadow for depth */
+                -10px -10px 20px rgba(255, 255, 255, 0.1);
+    height: 350px;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temp {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.feels-like {
+    font-size: 16px;
+}
+
+.icon img {
+    margin-left: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.sunrise-sunset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sunrise, .sunset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.extra-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.info img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.summary {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bodyLowerSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+.forecast-widget {
+    background-color: #3C3C3C;
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), /* Dark shadow for depth */
+                -10px -10px 20px rgba(255, 255, 255, 0.1);
+    margin-left: 67px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.day img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.day .temp {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.day .date {
+    font-size: 14px;
+}
+
+.hourly-forecast-widget {
+    background-color: #3C3C3C;
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), /* Dark shadow for depth */
+                -10px -10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.hourly-forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hour {
+    background-color: #444;
+    border-radius: 10px;
+    padding: 19px;
+    text-align: center;
+    width: 90px;
+}
+
+.hour .time {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hour img {
+    width: 38px;
+    height: 38px;
+    margin: 1px 0;
+}
+
+.hour .temp {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hour .wind-speed {
+    font-size: 12px;
+}
+
+.bodyLowerSection{
+    display: flex;
+}

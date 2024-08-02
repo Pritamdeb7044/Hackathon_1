@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="upperSection">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search for your preferred city..."
+          />
+          <!-- <button class="search-button">Search</button> -->
+          <span class="search-icon">
+            <i class="fa-solid fa-magnifying-glass" style="color: #fafcff"></i>
+          </span>
+          <!-- Unicode for search icon -->
+        </div>
+        <div class="currentLoactionBtn">
+          <div class="currentLoc">Current location</div>
+          <span class="locationIcon">
+            <i class="fa-solid fa-location-crosshairs icon"></i>
+          </span>
+        </div>
+      </div>
+      <div class="bodySection">
+        <div class="bodyUpperSection">
+          <div class="clock-card">
+            <h1 class="city-name">Athens</h1>
+            <div class="time">
+              <span class="hours">09</span>:<span class="minutes">03</span>
+            </div>
+            <div class="date">
+              <span id="day">m</span>, <span id="date">21</span>
+              <span id="month">a</span>
+            </div>
+          </div>
+          <div class="weather-widget">
+            <div class="temperature">
+              <span class="temp">24°C</span>
+              <span class="feels-like"
+                >Feels like: <span class="feelsLike">22°C</span></span
+              >
+            </div>
+            <div class="icon">
+              <img src="https://cdn.weatherapi.com/weather/64x64/day/353.png" alt="" id="currIcon"/><br>
+              <span class="visibility"></span>
+            </div>
+            <div class="details">
+              <div class="sunrise-sunset">
+                <div class="sunrise">
+                  <span>Sunrise</span>
+                  <span>06:37 AM</span>
+                </div>
+                <div class="sunset">
+                  <span>Sunset</span>
+                  <span>20:37 AM</span>
+                </div>
+              </div>
+              <div class="extra-info">
+                <div class="info">
+                  <img src="./humidity.png" alt="Humidity" />
+                  <span class="humidity">41%</span>
+                </div>
+                <div class="info">
+                  <img src="./storm.png" alt="Wind Speed" />
+                  <span class="windSpeed">2km/h</span>
+                </div>
+                <div class="info">
+                  <img src="./pressure.png" alt="Pressure" />
+                  <span class="pressure">997hPa</span>
+                </div>
+                <div class="info">
+                  <img src="./sun.png" alt="UV Index" />
+                  <span class="uv">8 UV</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bodyLowerSection">
+          <div class="forecast-widget">
+            <div class="header">
+              <h2>5 Days Forecast:</h2>
+            </div>
+            <div class="forecast">
+              <div class="day">
+                <img
+                  src="https://openweathermap.org/img/wn/10d@2x.png"
+                  id="day1Icon"
+                  alt="Partly Cloudy"
+                />
+                <span class="temp" id="dayOneTemp">20°C</span>
+                <span class="date" id="dayOneDate">Friday, 1 Sep</span>
+              </div>
+              <div class="day">
+                <img
+                  src="https://openweathermap.org/img/wn/10d@2x.png"
+                  id="day2Icon"
+                  alt="Cloudy"
+                />
+                <span class="temp" id="dayTwoTemp">22°C</span>
+                <span class="date" id="dayTwoDate">Saturday, 2 Sep</span>
+              </div>
+              <div class="day">
+                <img
+                  src="https://openweathermap.org/img/wn/10d@2x.png"
+                  id="day3Icon"
+                  alt="Sunny"
+                />
+                <span class="temp" id="dayThreeTemp">27°C</span>
+                <span class="date" id="dayThreeDate">Sunday, 3 Sep</span>
+              </div>
+              <div class="day">
+                <img
+                  src="https://openweathermap.org/img/wn/10d@2x.png"
+                  id="day4Icon"
+                  alt="Rainy"
+                />
+                <span class="temp" id="dayFourTemp">18°C</span>
+                <span class="date" id="dayFourDate">Monday, 4 Sep</span>
+              </div>
+              <div class="day">
+                <img
+                  src="https://openweathermap.org/img/wn/10d@2x.png"
+                  id="day5Icon"
+                  alt="Rain"
+                />
+                <span class="temp" id="dayFiveTemp">16°C</span>
+                <span class="date" id="dayFiveDate">Tuesday, 5 Sep</span>
+              </div>
+            </div>
+          </div>
+          <div class="hourly-forecast-widget">
+            <div class="header">
+              <h2>Hourly Forecast:</h2>
+            </div>
+            <div class="hourly-forecast">
+              <div class="hour">
+                <span class="time" id="hour1time">12:00</span>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Sunny" id="hour1Icon"/>
+                <span class="temp" id="hour1temp">26°C</span>
+                <img src="./storm.png" alt="Wind" />
+                <span class="wind-speed" id="hour1wind">3km/h</span>
+              </div>
+              <div class="hour">
+                <span class="time" id="hour2time">15:00</span>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Sunny" id="hour2Icon"/>
+                <span class="temp" id="hour2temp">27°C</span>
+                <img src="./storm.png" alt="Wind" />
+                <span class="wind-speed" id="hour2wind">2km/h</span>
+              </div>
+              <div class="hour">
+                <span class="time" id="hour3time">18:00</span>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Partly Cloudy" id="hour3Icon"/>
+                <span class="temp" id="hour3temp">27°C</span>
+                <img src="./storm.png" alt="Wind" />
+                <span class="wind-speed" id="hour3wind">2km/h</span>
+              </div>
+              <div class="hour">
+                <span class="time" id="hour4time">21:00</span>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Cloudy" id="hour4Icon"/>
+                <span class="temp" id="hour4temp">25°C</span>
+                <img src="./storm.png" alt="Wind" />
+                <span class="wind-speed" id="hour4wind">3km/h</span>
+              </div>
+              <div class="hour">
+                <span class="time" id="hour5time">00:00</span>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Sunny" id="hour5Icon"/>
+                <span class="temp" id="hour5temp">22°C</span>
+                <img src="./storm.png" alt="Wind" />
+                <span class="wind-speed" id="hour5wind">3km/h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/a6fd8c8c83.js"
+      crossorigin="anonymous"
+    ></script>  
+    <script src="./script.js"></script>
+  </body>
+</html>
