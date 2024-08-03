@@ -14,17 +14,17 @@ WeatherIcon.addEventListener("click", function () {
 })
 
 ludoIcon.addEventListener("click", function () {
-  window.location.href = "./Ludo_game/Ludo-game.html"
+  window.location.href = "./LudoGame/Ludo-game.html"
 });
 
 mazeIcon.addEventListener("click", function () {
-    window.location.href = "./maze-game/index.html"
+    window.location.href = "./Maze_game/index.html"
 })
 
 melodyIcon.addEventListener("click", function () {
-  window.location.href = "./musicPlayer/index.html"
+  window.location.href = "./Music_Player/index.html"
 });
 
 VLC.addEventListener("click", function () {
-  window.location.href = "./VLC/fair/index.html"
+  window.location.href = "./vlc_player/index.html"
 });

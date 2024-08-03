@@ -42,7 +42,6 @@ const hour3wind = document.querySelector("#hour3wind");
 const hour4wind = document.querySelector("#hour4wind");
 const hour5wind = document.querySelector("#hour5wind");
 
-const API_key = "8ed5ef1efbeb5c5c466a28af0d529fcf";
 
 setInterval(function () {
   // console.log("Hello");
